@@ -27,7 +27,7 @@ btn.addEventListener("click", () => {
 function createGrid(size) {
     const style = document.querySelector('#cellSize');
     const minCellSize = 100/size;
-    style.textContent = `.gridElement { min-height: ${minCellSize}vh; min-width: ${minCellSize}vw; }`;
+    style.textContent = `.gridElement { min-height: ${minCellSize}vh }`;
     for (let i = 0; i < size; i++) {
         const gridRow = document.createElement("div");
         gridRow.classList = "gridRow";
