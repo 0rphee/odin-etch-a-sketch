@@ -1,0 +1,24 @@
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gridElement {
+    aspect-ratio: 1/1;
+    background-color: pink;
+}
+
+.gridElement:hover,
+.gridElement.gridElementPreviouslyHovered:hover {
+    background-color: blue;
+}
+
+.gridElement.gridElementPreviouslyHovered {
+    background-color: orange;
+}
